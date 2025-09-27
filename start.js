@@ -1,15 +1,17 @@
 const { spawn } = require('child_process');
 
-// Adjust these paths as per your repo structure
-const mcp = spawn('npm', ['run', 'dev'], { cwd: './context7', stdio: 'inherit' });
-const dashboard = spawn('node', ['server.js'], { cwd: './context7-dashboard', stdio: 'inherit' });
+console.log('Starting MCP server...');
+const mcp = spawn('npm', ['run', 'dev'], { cwd: './context7', stdio: 'inherit', shell: true });
 
-mcp.on('close', code => {
+console.log('Starting Dashboard server...');
+const dashboard = spawn('node', ['server.js'], { cwd: './context7-dashboard', stdio: 'inherit', shell: true });
+
+mcp.on('close', (code) => {
     console.log(`MCP server exited with code ${code}`);
     process.exit(code);
 });
 
-dashboard.on('close', code => {
+dashboard.on('close', (code) => {
     console.log(`Dashboard server exited with code ${code}`);
     process.exit(code);
 });
