@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 
 console.log('Starting MCP server...');
-const mcp = spawn('npm', ['run', 'dev'], { cwd: './context7', stdio: 'inherit', shell: true });
+spawn('npm', ['run', 'prod'], { cwd: './context7', stdio: 'inherit', shell: true });
 
 console.log('Starting Dashboard server...');
 const dashboard = spawn('npm', ['start'], { cwd: './context7-dashboard', stdio: 'inherit', shell: true });
