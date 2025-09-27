@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "vercel-build": "cd context7 && npm install && npm run build",
         "postinstall": "cd context7 && npm install && cd ../context7-dashboard && npm install",
         "start": "node start.js"
     }
