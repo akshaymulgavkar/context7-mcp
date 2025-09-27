@@ -1,0 +1,17 @@
+[
+  {
+    "type": "github",
+    "url": "https://github.com/supabase/supabase",
+    "docsPath": "/docs"
+  },
+  {
+    "type": "github",
+    "url": "https://github.com/open-source-labs/Recoilize",
+    "docsPath": "/docs"
+  },
+  {
+    "type": "github",
+    "url": "https://github.com/HKUDS/RAG-Anything",
+    "docsPath": "/docs"
+  }
+]

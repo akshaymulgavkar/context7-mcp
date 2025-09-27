@@ -1,0 +1,5 @@
+{
+    "watch": ["sources.json"],
+    "ext": "json",
+    "exec": "npm run start"
+}
